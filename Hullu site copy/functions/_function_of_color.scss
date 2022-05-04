@@ -1,0 +1,9 @@
+
+
+@function colorChange ($color) {
+   @if($color == 'black'){
+       $color : $secondary-color;
+   }@else {
+       $color : $main-color;
+   }
+}

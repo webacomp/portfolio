@@ -1,0 +1,74 @@
+/*Main setting up*/
+
+/*Utilities*/
+a {
+    color: $secondary-color;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: $greyish-color;
+}
+
+h4{
+    color:rgb(0, 237, 130);
+    font-size: .625rem;
+    text-transform: uppercase;
+  
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: block;
+    background-color: $secondary-color;
+    color: $shaddow;
+    min-width: 133px;
+    padding: 1.125em 2em;
+    font-size: .8rem;
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: .0563em;
+    border: $border-no;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.btn-dark {
+    background: $main-color;
+    color: $secondary-color;
+    margin-left: 0;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+    opacity: .8;
+}
+
+.legal-text {
+    font-size: .5em;
+    color: $greyish-color;
+    margin-top: 1.2em;
+}
+
+.text-xl {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.sub-text {
+    max-width: 850px;
+    margin-bottom:10px;
+    font-size: 1.2rem;
+}
