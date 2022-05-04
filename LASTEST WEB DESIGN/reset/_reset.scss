@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+        sans-serif;
+    ;
+
+
+}
+
+ .container {
+     width: 100%;
+
+     display: flex;
+     flex-wrap: wrap;
+
+     position: relative;
+ }
+
+ h1,h2,h3{
+     color: #333;
+ }
+
+ img {
+     max-width: 100%;
+     display: block;
+ }
+
+
+ul {
+    list-style: none;
+}
+
+
+
+a {
+    color: rgb(49, 49, 49);
+     text-decoration: none;
+     color: rgb(12, 12, 12);
+     font-weight: 500;
+}

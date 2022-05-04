@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import '../reset/reset';
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+    ;
+
+   
+}
+
+
+ .container {
+     width: 100%;
+
+     display: flex;
+     flex-wrap: wrap;
+
+     position: relative;
+
+     height: 100vh;
+     
+ }
+
+ .navbar {
+     text-align: center;
+      width: 100%;
+
+      .logo {
+          width: 140px;
+          cursor: pointer;
+        //  position: relative;
+        //  bottom:0em;
+      }
+
+     .menu {
+         display: none;
+     }
+
+     
+ }
+
+  .left-col {
+      text-align: center;
+    width: 100%;
+
+    h1{
+        font-size: 2.3rem;
+    }
+  }
+
+ .right-col {
+     text-align: center;
+    width: 100%;
+    background-color: transparent;
+   
+
+     .back-video {
+         width: 90%;
+         height: 50vh;
+     }
+  }
+
+
+
+
+
+
+
+
+@media (min-width:568px) {
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        padding: 30px 5%;
+        z-index: 1000;
+
+
+         .menu {
+             display: block;
+             width: 30px;
+             cursor: pointer;
+         }
+
+        .list-items {
+          flex: 1;
+          text-align: right;
+          margin-right: 150px;
+
+          .white-menu {
+             color: #fff;
+          } 
+
+          .list-item {
+              display: inline-block;
+              padding: .5em 1em;
+          }
+        }
+
+    }
+
+     .left-col {
+         flex-basis: 62%;
+         padding: 10em 5em 0;
+
+         h1{
+             color: #444;
+             text-align: left;
+            // //  margin-left: -1rem;
+            //  padding: 0;
+             position: relative;
+
+             &::before {
+                 content: '';
+                 position: absolute;
+                 background: #0011db;
+                 height: 80%;
+                 width: 8px;
+                 border-radius: 5px;
+                 left: -20px;
+                 top: 50%;
+                 transform: translateY(-50%);
+             }
+         }
+
+     }
+
+     .right-col {
+         position: relative;
+        flex-basis: 38%;
+           padding: 10em 3em 0;
+          background: rgba(71, 0, 204, 0.6);
+
+          h3 {
+             color: #fff;
+             font-weight: 500; 
+             padding-left: 5px;
+
+             position: absolute;
+             bottom: 120px;
+           
+
+             &::before {
+                   content: '';
+                   position: absolute;
+                   background: #fff;
+                   height: 100%;
+                   width: 5px;
+                   border-radius: 5px;
+                   left: 10px;
+                   top: 50%;
+                   transform: translateY(-50%);
+            }
+
+            span {
+                display:block;
+                position: relative;
+                left: 1.5em;
+            }
+
+          }
+
+          .play-icon {
+              width: 80px;
+              position: absolute;
+               top:50%;
+               transform: translate(-50%, -50%);
+               left: 50%;
+          }
+       
+
+          .back-video { 
+              
+           position: absolute;
+           bottom: 0;
+            right: 0;
+          height: auto;
+           width: 100%;
+            z-index: -100;
+           }
+     }
+
+     .team {
+         display: flex;
+         justify-content:space-between;
+         margin-top: 5em;
+      
+
+         .user-col {
+             flex-basis: 27%; 
+             text-align: center;
+             transition: transform 1s;
+              position: relative;
+
+             &:hover {
+                 transform: translateY(50px);
+             }
+
+             &:hover .info {
+                 opacity: 1;
+             }
+
+             &:hover .arrow-icon {
+                 opacity: 0;
+             }
+
+              img {
+                 border-radius: 10px;
+                 cursor: pointer;
+              } 
+
+           .info {
+              opacity: 0;
+              transition: opacity 1s;
+
+              p {
+                  color: #555;
+                  font-weight: 600;
+              }
+           }
+
+           .arrow-icon {
+               width: 30px;
+               position: absolute;
+               bottom: 80px;
+               left: 50%;
+               transform: translateX(-50%);
+               transition: opacity 1s;
+           }
+
+         } 
+
+     }
+
+    
+}
