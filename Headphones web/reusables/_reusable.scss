@@ -1,0 +1,17 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+    padding: 4rem 0 2rem;
+}
+
+.section_title {
+    font-size: $bigger-font-size;
+    text-align: center;
+    margin-bottom: $mb-2-5;
+}
+
+.section_title-gradient {
+    background: $text-gradient;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

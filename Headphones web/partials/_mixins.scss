@@ -1,0 +1,5 @@
+
+@mixin grid-template-c($fit:auto-fit,$min,$max) {
+    grid-template-columns: repeat(auto-fit, minmax($min, $max));
+
+}
